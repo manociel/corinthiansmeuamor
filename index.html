@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site responsivo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+        }
+        header {
+            background-color: #111;
+            padding: 20px;
+        }
+        header img {
+            width: 100px;
+        }
+        nav {
+            background-color: #cc0000;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .banner {
+            background-image: url('https://source.unsplash.com/1600x900/?soccer');
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .news {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .news article {
+            background-color: #222;
+            padding: 20px;
+            margin: 10px;
+            width: 300px;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #111;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .news {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="IMG/ciel.png" alt="Corinthians Logo">
+    </header>
+    <nav>
+        <a href=>Home</a>
+        <a href=>Notícias</a>
+        <a href=>Jogadores</a>
+        <a href=>Ingressos</a>
+    </nav>
+    <div class="banner">Bem-vindo à torcida fiel</div>
+    <div class="container">
+        <h2>Últimas Notícias</h2>
+        <div class="news">
+            <article>
+                <h3>Vitória no Clássico</h3>
+                <p>O Corinthians venceu o clássico e segue forte no campeonato!</p>
+            </article>
+            <article>
+                <h3>Contratação de Peso</h3>
+                <p>O Timão anunciou a contratação de um novo craque para a temporada.</p>
+            </article>
+            <article>
+                <h3>Ingressos à Venda</h3>
+                <p>Garanta já seu ingresso para o próximo jogo na Neo quimica arena.</p>
+            </article>
+        </div>
+</body>
+</html>
